@@ -1,0 +1,17 @@
+
+.language-button{
+  cursor: pointer;
+  padding: 5px;
+  width: 50px;
+  list-style: none;
+  color: #fff;
+    &--selected{
+        font-weight: bold;
+     }
+}
+.nav-link{
+
+}
+.logo{
+  height :80px;
+}
