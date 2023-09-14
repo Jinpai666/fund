@@ -16,7 +16,7 @@ function Navigation() {
       <nav className="navigation">
         <img
           className="navigation__logo"
-          src="src/assets/logo.jpg"
+          src="logo.jpg"
           alt="Working Capital"
         />
         <div className="navigation__right-side">
