@@ -1,0 +1,73 @@
+/* src/components/BurgerMenu.css */
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.burger-menu .bar {
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  margin: 3px 0;
+  transition: 0.4s;
+}
+
+.burger-menu.open .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.burger-menu.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-menu.open .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-6px, -6px);
+}
+
+.mobile-navigation {
+  display: none;
+  background-color: rgb(89, 87, 87);
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(10%, 30%);
+
+}
+
+.mobile-navigation.open {
+  display: block;
+}
+
+.mobile-navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.mobile-navigation li {
+  float: left;
+  width: 150px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #a90000;
+
+  }
+}
+
+.mobile-navigation a {
+  display: block;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.burger-wrapper {
+  position: relative;
+  @media (min-width: 769px) {
+    display: none;
+  }
+}

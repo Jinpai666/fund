@@ -1,3 +1,9 @@
 {
-  "header": "Welcome"
+  "header": "Welcome",
+  "home": "HOME",
+  "about": "About Us",
+  "team": "Team",
+  "strategy": "Strategy",
+  "portfolio": "Portfolio",
+  "contact": "Contact Us"
 }
