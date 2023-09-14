@@ -1,9 +1,11 @@
 {
-  "header": "Welcome",
   "home": "HOME",
   "about": "About Us",
   "team": "Team",
   "strategy": "Strategy",
   "portfolio": "Portfolio",
-  "contact": "Contact Us"
+  "contact": "Contact Us",
+  "welcome": "Welcome to WORKING CAPITAL",
+  "seeding": "Seeding Tomorrow's Tech Giants"
+
 }

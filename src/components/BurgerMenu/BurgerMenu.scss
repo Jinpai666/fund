@@ -27,17 +27,20 @@
 }
 
 .mobile-navigation {
-  display: none;
   background-color: rgb(89, 87, 87);
   position: absolute;
   top: 0;
   right: 0;
-  transform: translate(10%, 30%);
+  transform: translate(1200%, 30%);
+  display: block;
+  transition: all 0.2s;
+
 
 }
 
 .mobile-navigation.open {
-  display: block;
+  transform: translate(10px, 30%);
+
 }
 
 .mobile-navigation ul {
