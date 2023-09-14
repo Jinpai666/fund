@@ -16,7 +16,7 @@ function Navigation() {
       <nav className="navigation">
         <img
           className="navigation__logo"
-          src="logo.jpg"
+          src="logo.webp"
           alt="Working Capital"
         />
         <div className="navigation__right-side">
