@@ -1,16 +1,41 @@
 
-.language-button{
-  cursor: pointer;
-  padding: 5px;
-  width: 50px;
-  list-style: none;
-  color: #fff;
-    &--selected{
-        font-weight: bold;
-     }
+.App{
+    font-family: "Lato", serif;
 }
-.nav-link{
+.navigation{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
+  &__button{
+    cursor: pointer;
+    padding: 5px;
+    width: 50px;
+    list-style: none;
+    &--selected{
+      font-weight: bold;
+    }
+  }
+  &__right-side{
+    display: flex;
+    align-items: center;
+  }
+  &__links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+  &__link{
+    color: #000;
+    text-decoration: none;
+    &:hover{
+      color: #bd2727
+    }
+  }
 }
 .logo{
   height :80px;

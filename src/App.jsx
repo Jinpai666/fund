@@ -2,7 +2,7 @@ import {Suspense} from 'react';
 import {useTranslation} from 'react-i18next'
 import './App.scss'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Navbar, Nav, Container } from 'react-bootstrap';
+import {Navbar, Nav, Container, Row, Col} from 'react-bootstrap';
 
 
 const locales = {
@@ -13,42 +13,53 @@ const locales = {
 function App() {
     const {t, i18n} = useTranslation();
     return (
-        <>
-            <Navbar collapseOnSelect expand='md' fixed='top'>
-                <Container className="d-flex justify-content-between">
-                    <Navbar.Brand  href="#"><img className="logo" src="../public/logo.jpg" alt="Working Capital"/></Navbar.Brand>
-                    <Navbar.Toggle aria-controls='responsive-navbar-nav' />
-                    <Navbar.Collapse className="justify-content-end" id='responsive-navbar-nav'>
-                            <Nav>
-                                <Nav.Link className="navlink" href='/#'>HOME</Nav.Link>
-                                <Nav.Link href='#about'>About Us</Nav.Link>
-                                <Nav.Link href='#team'>Team</Nav.Link>
-                                <Nav.Link href='#strategy'>Strategy</Nav.Link>
-                                <Nav.Link href='#portfolio'>Portfolio</Nav.Link>
-                                <Nav.Link href='#contact'>Contact Us</Nav.Link>
-                            </Nav>
-
-                    </Navbar.Collapse>
-                    <ul className="ms-4" >
+        <Container className="App">
+            <nav className="navigation">
+                <img className="logo" src="../public/logo.jpg" alt="Working Capital"/>
+                <div className="navigation__right-side">
+                    <ul className="navigation__links">
+                        <li >
+                            <a className="navigation__link" href="#">HOME</a>
+                        </li>
+                        <li >
+                            <a className="navigation__link" href="#about">About Us</a>
+                        </li>
+                        <li >
+                            <a className="navigation__link" href="#team">Team</a>
+                        </li>
+                        <li >
+                            <a className="navigation__link" href="#strategy">Strategy</a>
+                        </li>
+                        <li >
+                            <a className="navigation__link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li >
+                            <a className="navigation__link" href="#contact">Contact Us</a>
+                        </li>
+                    </ul>
+                    <ul className="ms-4">
                         {Object.keys(locales).map(locale => (
                             <li key={locale}>
-                                <button className="language-button" style={{width:'50px', fontWeight: i18n.resolvedLanguage === locale ? 'bold' : 'normal'}} type='submit'
-                                        onClick={() => i18n.changeLanguage(locale)}>
+                                <button
+                                    className={`navigation__button ${i18n.resolvedLanguage === locale ? 'navigation__button--selected' : ''}`}
+                                    onClick={() => i18n.changeLanguage(locale)}>
                                     {locales[locale].title}
                                 </button>
                             </li>
                         ))}
                     </ul>
-                </Container>
-            </Navbar>
-
-                <div>
-
-                    <h1>{t('header')}</h1>
                 </div>
 
+            </nav>
 
-        </>
+
+            <div>
+
+                <h1>{t('header')}</h1>
+            </div>
+
+
+        </Container>
 
 
     )
