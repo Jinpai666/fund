@@ -8,11 +8,11 @@ const locales = {
 };
 function Navigation({t, i18n}) {
   return (
-    <Container className="App">
+    <Container id="top" >
       <nav className="navigation">
         <img
           className="navigation__logo"
-          src="logo.svg"
+          src="logo2.svg"
           alt="Working Capital"
         />
         <div className="navigation__right-side">

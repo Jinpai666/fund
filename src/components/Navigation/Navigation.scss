@@ -1,7 +1,25 @@
+@import "src/assets/variables";
+#top{
+  position: relative;
+}
 .navigation {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  background: #fff;
+  width: 100%;
+  padding: 0 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1320px;
+  @media (max-width: 768px) {
+    padding-bottom: 10px;
+  }
   &__logo {
-    height: 100px;
-    margin: 20px 0;
+    height: 60px;
   }
   display: flex;
   justify-content: space-between;
@@ -11,7 +29,7 @@
     cursor: pointer;
     padding: 3px 6px;
     list-style: none;
-    border: 1px solid #000;
+    border: 1px solid $secondary-color;
     text-align: center;
     font-size: 12px;
     &:nth-of-type(2) {
@@ -26,6 +44,7 @@
     align-items: center;
   }
   &__links {
+    font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,10 +61,10 @@
     }
   }
   &__link {
-    color: #000;
+    color: $secondary-color;
     text-decoration: none;
     &:hover {
-      color: #bd2727;
+      color:$accent-light;
     }
   }
 }

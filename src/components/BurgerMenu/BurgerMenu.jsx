@@ -28,7 +28,7 @@ function BurgerMenu({t}) {
       <nav className={`mobile-navigation ${isOpen ? "open" : ""}`}>
         <ul>
           <li>
-            <a onClick={handleMenuClick} href="#home">
+            <a onClick={handleMenuClick} href="#">
               {t("home")}
             </a>
           </li>

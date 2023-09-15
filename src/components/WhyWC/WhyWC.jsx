@@ -1,6 +1,6 @@
 import "./WhyWC.scss";
-import { Container } from "react-bootstrap";
-
+import { Container, Row, Col } from "react-bootstrap";
+import { Controller, Film, Lightbulb, Building } from 'react-bootstrap-icons';
 
 
 function WhyWC({t}) {
@@ -12,12 +12,25 @@ function WhyWC({t}) {
               <p className="whyWC__paragraph">
                   {t("whyText")}
               </p>
-              <div className="whyWC__icons">
-                  <i className="whyWC__icon">1</i>
-                  <i className="whyWC__icon">1</i>
-                  <i className="whyWC__icon">1</i>
-                  <i className="whyWC__icon">1</i>
-              </div>
+
+              <Row className="whyWC__icons">
+                  <Col sm={3}>
+                      <Controller color="white" size={56} />
+                  </Col>
+                  <Col sm={3}>
+                      <Film color="white"  size={56} />
+
+                  </Col>
+                  <Col sm={3}>
+                      <Lightbulb color="white"   size={56}/>
+
+                  </Col>
+                  <Col sm={3}>
+                      <Building color="white"  size={56}/>
+
+                  </Col>
+
+              </Row>
           </div>
       </Container>
 

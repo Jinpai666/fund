@@ -1,3 +1,5 @@
+@import "src/assets/variables";
+
 .welcome-section {
   position: relative;
   padding: 130px 0;
@@ -20,11 +22,11 @@
   }
 
   &__header {
-    font-size: 28px;
+    font-size: $small-header;
     padding: 10px 0 30px 0;
 
-    @media (max-width: 1199px) {
-      font-size: 20px;
+    @media (max-width: 991px) {
+      font-size: $small-header-md;
     }
 
     @media (max-width: 480px) {
@@ -33,12 +35,12 @@
   }
 
   &__text {
-    font-size: 40px;
+    font-size: $big-header;
     height: 100%;
     border-top: 0;
 
-    @media (max-width: 1199px) {
-      font-size: 24px;
+    @media (max-width: 991px) {
+      font-size: $big-header-md;
     }
 
     @media (max-width: 480px) {
