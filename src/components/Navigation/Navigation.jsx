@@ -2,8 +2,11 @@ import { Suspense } from "react";
 import "./Navigation.scss";
 import { Container } from "react-bootstrap";
 import BurgerMenu from "../BurgerMenu/BurgerMenu.jsx";
-
-function Navigation({t, locales, i18n}) {
+const locales = {
+  en: { title: "EN" },
+  pl: { title: "PL" },
+};
+function Navigation({t, i18n}) {
   return (
     <Container className="App">
       <nav className="navigation">

@@ -5,7 +5,7 @@ import React, { useState } from "react";
 
 
 
-function BurgerMenu({t, locales}) {
+function BurgerMenu({t}) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {

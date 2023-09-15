@@ -1,22 +1,20 @@
 import { Suspense } from "react";
 import "./App.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { useTranslation } from "react-i18next";
 import Navigation from "./components/Navigation/Navigation.jsx";
 import Welcome from "./components/Welcome/Welcome.jsx";
-import { useTranslation } from "react-i18next";
+import WhyWC from "./components/WhyWC/WhyWC.jsx";
 
-const locales = {
-    en: { title: "EN" },
-    pl: { title: "PL" },
-};
 
 function App() {
     const { t, i18n } = useTranslation();
 
     return (
     <div className="App">
-      <Navigation t={t} locales={locales} i18n={i18n} />
-      <Welcome t={t} locales={locales} />
+      <Navigation t={t}  i18n={i18n} />
+      <Welcome t={t}  />
+        <WhyWC t={t}/>
     </div>
   );
 }
