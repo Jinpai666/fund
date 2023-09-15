@@ -1,8 +1,11 @@
 import "./BurgerMenu.scss";
+import { useTranslation } from "react-i18next";
 
 import React, { useState } from "react";
 
-function BurgerMenu() {
+
+
+function BurgerMenu({t, locales}) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -26,32 +29,32 @@ function BurgerMenu() {
         <ul>
           <li>
             <a onClick={handleMenuClick} href="#home">
-              HOME
+              {t("home")}
             </a>
           </li>
           <li>
             <a onClick={handleMenuClick} href="#about">
-              About Us
+              {t("about")}
             </a>
           </li>
           <li>
             <a onClick={handleMenuClick} href="#team">
-              Team
+              {t("team")}
             </a>
           </li>
           <li>
             <a onClick={handleMenuClick} href="#strategy">
-              Strategy
+              {t("strategy")}
             </a>
           </li>
           <li>
             <a onClick={handleMenuClick} href="#portfolio">
-              Portfolio
+              {t("portfolio")}
             </a>
           </li>
           <li>
             <a onClick={handleMenuClick} href="#contact">
-              Contact Us
+              {t("contact")}
             </a>
           </li>
         </ul>

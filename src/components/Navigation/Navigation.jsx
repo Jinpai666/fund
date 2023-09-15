@@ -1,16 +1,9 @@
 import { Suspense } from "react";
-import { useTranslation } from "react-i18next";
 import "./Navigation.scss";
 import { Container } from "react-bootstrap";
 import BurgerMenu from "../BurgerMenu/BurgerMenu.jsx";
 
-const locales = {
-  en: { title: "EN" },
-  pl: { title: "PL" },
-};
-
-function Navigation() {
-  const { t, i18n } = useTranslation();
+function Navigation({t, locales, i18n}) {
   return (
     <Container className="App">
       <nav className="navigation">
@@ -52,7 +45,7 @@ function Navigation() {
               </a>
             </li>
           </ul>
-          <BurgerMenu />
+          <BurgerMenu t={t} locales={locales} />
 
           <ul className="ms-4">
             {Object.keys(locales).map((locale) => (

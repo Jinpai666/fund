@@ -2,13 +2,9 @@ import { useTranslation } from "react-i18next";
 import "./Welcome.scss";
 import { Container } from "react-bootstrap";
 
-const locales = {
-  en: { title: "EN" },
-  pl: { title: "PL" },
-};
 
-function Welcome() {
-  const { t } = useTranslation();
+
+function Welcome({t, locales}) {
   return (
     <Container className="welcome-section">
       <div className="welcome-section__row-wrapper">
