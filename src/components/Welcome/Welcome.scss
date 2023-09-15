@@ -7,26 +7,37 @@
   &__header{
     color: #3c3c3c;
     padding: 10px 0 3px 3px;
-    border: 1px solid black;
+    border-bottom: 1px solid black;
     text-align: left;
 
   }
+  &__text-container{
+    height:50%;
+    width: 100%;
+    @media (max-width: 575px) {
+      margin-bottom: 50px;
+
+    }
+  }
   &__text{
-    border: 1px solid black;
     border-top: 0;
-    padding: 50px 0;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
-    height: 200px;
+    font-size: 26px;
+    text-align: center;
+    @media (max-width: 991px) {
+      font-size: 22px;
+
+    }
   }
-  //&__row{
-  //  align-items: center;
-  //  justify-content: space-between;
-  //}
-  //&__column{
-  //  padding: 0;
-  //  width:45%;
-  //}
+
+  &__column{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+
 }
