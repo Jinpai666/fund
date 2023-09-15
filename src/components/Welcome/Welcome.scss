@@ -1,43 +1,73 @@
-.welcome-section{
-  margin-top: 70px;
+.welcome-section {
+  position: relative;
+  padding: 130px 0;
   background-color: #f0f1f1;
-  &__image{
-    width:100%;
-  }
-  &__header{
-    color: #3c3c3c;
-    padding: 10px 0 3px 3px;
-    border-bottom: 1px solid black;
-    text-align: left;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../../public/images/yesmen.jpg");
+  background-size: cover;
+  background-position-y: 40%;
 
+  @media (max-width: 1199px) {
+    padding: 6vw 0;
   }
-  &__text-container{
-    height:50%;
+
+  @media (max-width: 480px) {
+    background-position-x: center;
+  }
+
+  &__image {
     width: 100%;
-    @media (max-width: 575px) {
-      margin-bottom: 50px;
+  }
 
+  &__header {
+    font-size: 28px;
+    padding: 10px 0 30px 0;
+
+    @media (max-width: 1199px) {
+      font-size: 20px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 18px;
     }
   }
-  &__text{
-    border-top: 0;
+
+  &__text {
+    font-size: 40px;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 26px;
-    text-align: center;
-    @media (max-width: 991px) {
-      font-size: 22px;
+    border-top: 0;
 
+    @media (max-width: 1199px) {
+      font-size: 24px;
+    }
+
+    @media (max-width: 480px) {
+      background-position-x: center;
     }
   }
 
-  &__column{
-    justify-content: center;
-    align-items: center;
-    display: flex;
+  &__text-container {
+    width: 50%;
+    margin-left: 30px;
+    text-align: left;
+    padding: 50px 0;
+    color: #fff;
+    z-index: -10;
+
+    @media (max-width: 1199px) {
+      width: 100%;
+    }
+
+    @media (max-width: 480px) {
+      text-align: center;
+      padding: 0 10px;
+      margin: 0;
+    }
   }
 
-
+  &__column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

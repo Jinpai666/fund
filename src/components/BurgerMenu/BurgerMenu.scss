@@ -33,13 +33,14 @@
   right: 0;
   transform: translate(1200%, 30%);
   display: block;
-  transition: all 0.2s;
+  transition: 0.2s;
 
 
 }
 
 .mobile-navigation.open {
   transform: translate(10px, 30%);
+  z-index: 10;
 
 }
 
