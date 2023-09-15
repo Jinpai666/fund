@@ -1,9 +1,12 @@
+@import "src/assets/variables";
 
 body {
   overflow-x: hidden;
 }
 .App {
   font-family: "Lato", serif;
+  font-size: $main-font;
+
 }
 
 /* Position and sizing of burger button */
