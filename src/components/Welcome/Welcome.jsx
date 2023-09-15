@@ -20,7 +20,7 @@ function Welcome() {
                           </div>
                       </Col>
                       <Col className="welcome-section__column"  sm={6}>
-                              <img className="welcome-section__image" src="../../assets/people.webp" alt="people"/>
+                              <img className="welcome-section__image" src="images/people.webp" alt="people"/>
 
                       </Col>
                   </Row>
