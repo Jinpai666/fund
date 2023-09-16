@@ -1,7 +1,6 @@
 import { Suspense } from "react";
 import "./App.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
-import {  Container } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import Navigation from "./components/Navigation/Navigation.jsx";
 import Welcome from "./components/Welcome/Welcome.jsx";
@@ -13,13 +12,13 @@ function App() {
   const { t, i18n } = useTranslation();
 
   return (
-    <Container className="App">
+    <div className="App">
       <Navigation t={t} i18n={i18n} />
       <Welcome t={t} />
       <WhyWC t={t} />
       <OurNumbers t={t} />
         <About t={t}/>
-    </Container>
+    </div>
   );
 }
 
