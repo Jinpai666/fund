@@ -1,0 +1,34 @@
+@import "variables";
+
+@mixin small-header {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 1px solid $secondary-color;
+  margin-bottom: 40px;
+  @media (max-width: 991px) {
+    font-size: $small-header-md;
+  }
+  @media (max-width: 767px) {
+
+    font-size: $small-header-sm;
+
+  }
+}
+@mixin big-header {
+  margin: 20px auto;
+  font-size: $big-header;
+  font-weight: bold;
+  text-align: center;
+  @media (max-width: 991px) {
+    font-size: $big-header-md;
+  }
+  @media (max-width: 767px) {
+
+    font-size: $big-header-sm;
+
+  }
+}
+@mixin section-margin {
+  margin-top: 70px;
+}
