@@ -9,6 +9,7 @@
   }
   &__columns{
     justify-content: center;
+    gap: 20px;
   }
   &__container{
     text-align: center;
@@ -26,7 +27,6 @@
     transition: 4s;
   }
   &__card{
-    min-width: 200px;
     margin-bottom: 20px;
     border-radius: 10px;
     height: 200px;
