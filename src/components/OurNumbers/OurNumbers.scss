@@ -5,6 +5,32 @@
   @include section-margin;
 
   &__header{
-    @include small-header
+    @include small-header;
+  }
+  &__columns{
+    justify-content: center;
+    gap: 10px;
+  }
+  &__container{
+    text-align: center;
+    padding: 60px 0 20px;
+    min-width: 240px ;
+    max-width: 240px ;
+  }
+  &__title{
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  &__text{
+      font-size: 36px;
+  }
+  &__card{
+    border-radius: 10px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 }

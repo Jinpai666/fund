@@ -8,28 +8,47 @@ function OurNumbers({ t }) {
         <h2 className="numbers__header ">
           {t("ourNumbers")}
         </h2>
-
         <Row className="numbers__columns">
-          <Col>
-            <h3>{t("seedFunding")}</h3>
-            <p className="whyWC__subtext">100 mln $</p>
+          <Col className="numbers__container">
+              <div class="numbers__card">
+                  <h3 className="numbers__title">{t("seedFunding")}</h3>
+                  <p className="numbers__text">100 mln $</p>
+              </div>
+
+
           </Col>
-          <Col>
-            <h3>{t("pipeline")}</h3>
-            <p className="whyWC__subtext">15</p>
+          <Col className="numbers__container">
+              <div class="numbers__card">
+                  <h3 className="numbers__title">{t("pipeline")}</h3>
+                  <p className="numbers__text">15</p>
+              </div>
+
+
           </Col>
-          <Col>
-            <h3>{t("tickets")}</h3>
-            <p className="whyWC__subtext">{t("from2mln")}</p>
+          <Col className="numbers__container">
+              <div class="numbers__card">
+                  <h3 className="numbers__title">{t("tickets")}</h3>
+                  <p className="numbers__text">2 mln $</p>
+              </div>
+
+
           </Col>
-          <Col>
-            <h3>{t("partners")}</h3>
-            <p className="whyWC__subtext">40</p>
+          <Col className="numbers__container">
+              <div class="numbers__card">
+                  <h3 className="numbers__title">{t("partners")}</h3>
+                  <p className="numbers__text">40</p>
+              </div>
+
+
           </Col>
-          <Col>
-            <h3>{t("other")}</h3>
-            <p className="whyWC__subtext">100 mln PLN</p>
+          <Col className="numbers__container">
+              <div class="numbers__card">
+                  <h3 className="numbers__title">{t("other")}</h3>
+                  <p className="numbers__text">100 mln PLN</p>
+              </div>
+
           </Col>
+
 
         </Row>
       </div>

@@ -17,7 +17,7 @@ function App() {
       <Welcome t={t} />
       <WhyWC t={t} />
       <OurNumbers t={t} />
-
+        <WhyWC t={t} />
     </Container>
   );
 }
