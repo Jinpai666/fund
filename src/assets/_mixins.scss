@@ -33,3 +33,9 @@
 @mixin section-margin {
   margin-top: 70px;
 }
+@mixin paragraph {
+  color: $secondary-color;
+  line-height: 26px;
+  margin-bottom: 30px;
+  text-align: center;
+}
