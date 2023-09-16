@@ -1,65 +1,37 @@
 @import "src/assets/variables";
+@import "src/assets/mixins";
 
-.whyWC{
-  margin-top: 70px;
+.whyWC {
+  @include section-margin;
   text-align: center;
-  &__header{
-    font-size: $small-header;
-    font-weight: bold;
-
-    &--text{
-      margin: 20px auto;
-      font-size: $big-header;
+  &__header {
+    &--small {
+      @include small-header;
+    }
+    &--large {
+      @include big-header;
     }
   }
-  &__paragraph{
-    line-height: 22px;
+  &__paragraph {
+    line-height: 26px;
     margin-bottom: 30px;
+    @media (max-width: 767px) {
+      line-height: 22px;
+    }
+    @media (max-width: 991px) {
+      line-height: 24px;
+    }
   }
-  &__icons{
+  &__icons {
     padding: 20px 0;
     background-color: #bd2727;
+    @media (max-width: 575px) {
+      gap: 40px;
+    }
   }
-  &__subtext{
+  &__subtext {
     color: $primary-color;
     font-weight: bold;
     margin-top: 20px;
-  }
-}
-
-@media (max-width: 991px) {
-  .whyWC{
-
-    &__header{
-      font-size: $small-header-md;
-      &--text{
-        font-size: $big-header-md;
-      }
-    }
-    &__paragraph{
-      line-height: 20px;
-    }
-  }
-}
-@media (max-width: 767px) {
-  .whyWC{
-
-    &__header{
-      font-size: $small-header-sm;
-      &--text{
-        font-size: $big-header-sm;
-      }
-    }
-    &__paragraph{
-      line-height: 18px;
-    }
-  }
-}
-@media (max-width: 575px) {
-  .whyWC{
-
-   &__icons{
-     gap: 40px
-   }
   }
 }

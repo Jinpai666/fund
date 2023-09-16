@@ -13,5 +13,12 @@
   "whyIcon1": "Games",
   "whyIcon2":"Films",
   "whyIcon3": "New Technologies",
-  "whyIcon4":"Modern Infrastructure"
+  "whyIcon4":"Modern Infrastructure",
+  "ourNumbers":"OUR NUMBERS",
+  "seedFunding":"Seed Funding",
+  "pipeline":"Pipeline of Projects",
+  "tickets":"Tickets",
+  "partners":"Partners",
+  "other":"Other",
+  "from2mln": "from 2 mln. $"
 }

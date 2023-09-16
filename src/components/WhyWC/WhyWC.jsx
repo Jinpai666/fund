@@ -1,15 +1,14 @@
 import "./WhyWC.scss";
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import { Controller, Film, Lightbulb, Building } from "react-bootstrap-icons";
 
 function WhyWC({ t }) {
   return (
-    <Container>
       <div className="whyWC">
-        <h3 className="whyWC__header whyWC__header--section">
+        <h3 className="whyWC__header--small ">
           {t("whySectionHeader")}
         </h3>
-        <h2 className="whyWC__header whyWC__header--text">
+        <h2 className="whyWC__header--large">
           {t("whyTextHeader")}
         </h2>
         <p className="whyWC__paragraph">{t("whyText")}</p>
@@ -33,7 +32,6 @@ function WhyWC({ t }) {
           </Col>
         </Row>
       </div>
-    </Container>
   );
 }
 
