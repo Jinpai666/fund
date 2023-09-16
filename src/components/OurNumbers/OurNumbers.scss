@@ -8,14 +8,11 @@
     @include small-header;
   }
   &__columns{
-    justify-content: center;
-    gap: 10px;
+    justify-content: space-between;
   }
   &__container{
     text-align: center;
-    padding: 60px 0 20px;
-    //min-width: 240px ;
-    //max-width: 240px ;
+
   }
   &__title{
     margin-bottom: 40px;
@@ -23,9 +20,11 @@
     font-size: 20px;
   }
   &__text{
-      font-size: 36px;
+      font-size: 30px;
   }
   &__card{
+    min-width: 200px;
+    margin-bottom: 20px;
     border-radius: 10px;
     height: 200px;
     display: flex;

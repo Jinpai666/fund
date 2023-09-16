@@ -8,8 +8,9 @@ const locales = {
 };
 function Navigation({t, i18n}) {
   return (
-      <Container>
-        <nav className="navigation" id="top">
+        <nav  id="top">
+          <Container className="navigation">
+
           <img
               className="navigation__logo"
               src="logo2.svg"
@@ -66,8 +67,9 @@ function Navigation({t, i18n}) {
               ))}
             </ul>
           </div>
+          </Container>
+
         </nav>
-      </Container>
 
   );
 }
