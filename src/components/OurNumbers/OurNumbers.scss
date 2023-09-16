@@ -9,6 +9,7 @@
   }
   &__columns{
     justify-content: space-between;
+    transition: 2s;
   }
   &__container{
     text-align: center;
@@ -31,5 +32,11 @@
     flex-direction: column;
     justify-content: center;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  &__hidden{
+    opacity: 0;
+  }
+  &__visible{
+    opacity: 1;
   }
 }
