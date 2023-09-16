@@ -1,7 +1,5 @@
 @import "src/assets/variables";
-#top{
-  position: relative;
-}
+
 .navigation {
   position: fixed;
   top: 0;
@@ -10,7 +8,7 @@
   z-index: 1000;
   background: #fff;
   width: 100%;
-  padding: 0 10px 20px;
+  padding: 10px 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,10 +19,17 @@
   &__logo {
     height: 60px;
   }
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  &__buttons {
 
+    @media (max-width: 768px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      gap: 20px;
+      margin-right: 40px;
+    }
+  }
   &__button {
     cursor: pointer;
     padding: 3px 6px;
@@ -34,14 +39,27 @@
     font-size: 12px;
     &:nth-of-type(2) {
       margin-top: 5px;
+      @media (max-width: 768px) {
+        margin-top: 0;
+      }
+    }
+    @media (max-width: 768px) {
+      margin-top: 0;
     }
     &--selected {
       font-weight: bold;
+      color: $accent-light;
+      border: 3px solid $accent-light;
+
     }
+
   }
   &__right-side {
     display: flex;
     align-items: center;
+    @media (max-width: 768px) {
+      flex-direction: row-reverse;
+    }
   }
   &__links {
     font-weight: bold;

@@ -20,6 +20,11 @@
     padding: 20px 0;
     background-color: #bd2727;
   }
+  &__subtext{
+    color: $primary-color;
+    font-weight: bold;
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 991px) {

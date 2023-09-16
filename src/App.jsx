@@ -6,15 +6,15 @@ import Navigation from "./components/Navigation/Navigation.jsx";
 import Welcome from "./components/Welcome/Welcome.jsx";
 import WhyWC from "./components/WhyWC/WhyWC.jsx";
 
-
 function App() {
-    const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
 
-    return (
+  return (
     <div className="App">
-      <Navigation t={t}  i18n={i18n} />
-      <Welcome t={t}  />
-        <WhyWC t={t}/>
+      <Navigation t={t} i18n={i18n} />
+      <Welcome t={t} />
+      <WhyWC t={t} />
+  
     </div>
   );
 }

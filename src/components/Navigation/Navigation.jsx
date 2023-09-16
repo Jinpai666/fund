@@ -50,7 +50,7 @@ function Navigation({t, i18n}) {
           </ul>
           <BurgerMenu t={t} locales={locales} />
 
-          <ul className="ms-4">
+          <ul className="ms-4 navigation__buttons">
             {Object.keys(locales).map((locale) => (
               <li
                 key={locale}
