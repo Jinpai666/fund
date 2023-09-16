@@ -9,7 +9,6 @@
   }
   &__columns{
     justify-content: space-between;
-    transition: 2s;
   }
   &__container{
     text-align: center;
@@ -19,9 +18,12 @@
     margin-bottom: 40px;
     font-weight: bold;
     font-size: 20px;
+    transition: 4s;
+
   }
   &__text{
       font-size: 30px;
+    transition: 4s;
   }
   &__card{
     min-width: 200px;
@@ -32,6 +34,7 @@
     flex-direction: column;
     justify-content: center;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 1s;
   }
   &__hidden{
     opacity: 0;
