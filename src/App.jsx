@@ -14,7 +14,7 @@ function App() {
       <Navigation t={t} i18n={i18n} />
       <Welcome t={t} />
       <WhyWC t={t} />
-  
+
     </div>
   );
 }
