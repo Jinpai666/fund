@@ -13,20 +13,32 @@
     background-size: cover;
 
   }
-  &__text-box {
-    background-color: $accent-light;
+  &__content {
     height: 100%;
     padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
+  &__row{
+    margin-bottom: 20px;
+    background: $accent-light;
+    &:nth-of-type(odd){
+      @media (max-width: 767px) {
+        flex-direction: column-reverse;
+      }
+    }
+
+
+  }
   &__column{
     padding: 0;
+
   }
   &__image-wrapper{
     width: 100%;
     height: 100%;
+
   }
   &__image{
     width: 100%;
@@ -38,10 +50,25 @@
     font-size: 26px;
     color: $primary-color;
     margin-bottom: 10px;
+    @media (max-width: 575px) {
+      text-align: center;
+      font-size: 22px; ;
+    }
   }
   &__text {
     @include paragraph;
-    margin-bottom: 20px;
     color: $primary-color;
+    @media (max-width: 575px) {
+      text-align: center;
+    }
+  }
+  &__text-group{
+    margin-bottom: 30px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:20px;
   }
 }

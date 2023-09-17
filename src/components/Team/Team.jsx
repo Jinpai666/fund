@@ -21,11 +21,7 @@ function Team({ t }) {
                                  </div>
                                  <div className="team__text">
                                      <p className="team__paragraph">{t("person1")}</p>
-                                     <p className="team__paragraph">{t("person1text1")}</p>
-                                     <p className="team__paragraph">{t("person1text2")}</p>
-                                     <p className="team__paragraph">{t("person1text3")}</p>
-                                     <p className="team__paragraph">{t("person1text4")}</p>
-                                     <p className="team__paragraph">{t("person1text5")}</p>
+                                     <p className="team__paragraph" dangerouslySetInnerHTML={{ __html: t('person1text') }} />
                                  </div>
 
                              </div>
@@ -38,9 +34,9 @@ function Team({ t }) {
                                  </div>
                                  <div className="team__text">
                                      <p className="team__paragraph">{t("person2")}</p>
-                                     <p className="team__paragraph">{t("person2text1")}</p>
-                                     <p className="team__paragraph">{t("person2text2")}</p>
-                                     <p className="team__paragraph">{t("person2text3")}</p>
+
+                                     <p className="team__paragraph" dangerouslySetInnerHTML={{ __html: t('person2text') }} />
+
                                  </div>
 
                              </div>
@@ -53,9 +49,9 @@ function Team({ t }) {
                                  </div>
                                  <div className="team__text">
                                      <p className="team__paragraph">{t("person3")}</p>
-                                     <p className="team__paragraph">{t("person3text1")}</p>
-                                     <p className="team__paragraph">{t("person3text2")}</p>
-                                     <p className="team__paragraph">{t("person3text3")}</p>
+
+                                     <p className="team__paragraph" dangerouslySetInnerHTML={{ __html: t('person3text') }} />
+
                                  </div>
 
                              </div>
@@ -68,8 +64,9 @@ function Team({ t }) {
                                  </div>
                                  <div className="team__text">
                                      <p className="team__paragraph">{t("person4")}</p>
-                                     <p className="team__paragraph">{t("person4text1")}</p>
-                                     <p className="team__paragraph">{t("person4text2")}</p>
+
+                                     <p className="team__paragraph" dangerouslySetInnerHTML={{ __html: t('person4text') }} />
+
                                  </div>
 
                              </div>
@@ -82,9 +79,7 @@ function Team({ t }) {
                                  </div>
                                  <div className="team__text">
                                      <p className="team__paragraph">{t("person5")}</p>
-                                     <p className="team__paragraph">{t("person5text1")}</p>
-                                     <p className="team__paragraph">{t("person5text2")}</p>
-
+                                     <p className="team__paragraph" dangerouslySetInnerHTML={{ __html: t('person5text') }} />
                                  </div>
 
                              </div>
@@ -97,8 +92,8 @@ function Team({ t }) {
                                  </div>
                                  <div className="team__text">
                                      <p className="team__paragraph">{t("person6")}</p>
-                                     <p className="team__paragraph">{t("person6text1")}</p>
-                                     <p className="team__paragraph">{t("person6text2")}</p>
+                                     <p className="team__paragraph" dangerouslySetInnerHTML={{ __html: t('person6text') }} />
+
 
                                  </div>
 
