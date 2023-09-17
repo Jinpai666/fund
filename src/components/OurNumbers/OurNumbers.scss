@@ -1,33 +1,31 @@
 @import "src/assets/variables";
 @import "src/assets/mixins";
 
-.numbers{
+.numbers {
   @include section-margin;
 
-  &__header{
+  &__header {
     @include small-header;
   }
-  &__columns{
+  &__columns {
     justify-content: center;
     gap: 20px;
   }
-  &__container{
+  &__container {
     text-align: center;
-
   }
-  &__title{
+  &__title {
     margin-bottom: 40px;
     font-weight: bold;
     font-size: 20px;
     transition: 1s;
-
   }
-  &__text{
-      font-size: 30px;
+  &__text {
+    font-size: 30px;
     transition: 3s;
     color: $accent-light;
   }
-  &__card{
+  &__card {
     margin-bottom: 20px;
     border-radius: 10px;
     height: 200px;
@@ -37,10 +35,10 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transition: 1s;
   }
-  &__hidden{
+  &__hidden {
     opacity: 0;
   }
-  &__visible{
+  &__visible {
     opacity: 1;
   }
 }

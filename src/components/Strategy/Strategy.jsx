@@ -5,7 +5,6 @@ function Strategy({ t }) {
   return (
     <section id="strategy">
       <Container>
-
         <div className="strategy">
           <h2 className="strategy__header">{t("strategyHeader")}</h2>
           <div className="strategy__content">
@@ -18,14 +17,22 @@ function Strategy({ t }) {
               </Col>
               <Col className="strategy__column" md={4}>
                 <div className="strategy__image-wrapper">
-                  <img className="strategy__image" src="/images/invest.webp" alt="invest"/>
+                  <img
+                    className="strategy__image"
+                    src="/images/invest.webp"
+                    alt="invest"
+                  />
                 </div>
               </Col>
             </Row>
             <Row className="strategy__row">
               <Col className="strategy__column" md={4}>
                 <div className="strategy__image-wrapper">
-                  <img className="strategy__image" src="/images/invest.webp" alt="invest"/>
+                  <img
+                    className="strategy__image"
+                    src="/images/invest.webp"
+                    alt="invest"
+                  />
                 </div>
               </Col>
               <Col className="strategy__column" md={8}>
@@ -44,15 +51,22 @@ function Strategy({ t }) {
               </Col>
               <Col className="strategy__column" md={4}>
                 <div className="strategy__image-wrapper">
-                  <img className="strategy__image" src="/images/invest.webp" alt="invest"/>
+                  <img
+                    className="strategy__image"
+                    src="/images/invest.webp"
+                    alt="invest"
+                  />
                 </div>
               </Col>
             </Row>
             <Row className="strategy__row">
-
               <Col className="strategy__column" md={4}>
                 <div className="strategy__image-wrapper">
-                  <img className="strategy__image" src="/images/invest.webp" alt="invest"/>
+                  <img
+                    className="strategy__image"
+                    src="/images/invest.webp"
+                    alt="invest"
+                  />
                 </div>
               </Col>
               <Col className="strategy__column" md={8}>
@@ -71,15 +85,22 @@ function Strategy({ t }) {
               </Col>
               <Col className="strategy__column" md={4}>
                 <div className="strategy__image-wrapper">
-                  <img className="strategy__image" src="/images/invest.webp" alt="invest"/>
+                  <img
+                    className="strategy__image"
+                    src="/images/invest.webp"
+                    alt="invest"
+                  />
                 </div>
               </Col>
             </Row>
             <Row className="strategy__row">
-
               <Col className="strategy__column" md={4}>
                 <div className="strategy__image-wrapper">
-                  <img className="strategy__image" src="/images/invest.webp" alt="invest"/>
+                  <img
+                    className="strategy__image"
+                    src="/images/invest.webp"
+                    alt="invest"
+                  />
                 </div>
               </Col>
               <Col className="strategy__column" md={8}>
@@ -89,13 +110,8 @@ function Strategy({ t }) {
                 </div>
               </Col>
             </Row>
-
-
-
           </div>
-
         </div>
-
       </Container>
     </section>
   );

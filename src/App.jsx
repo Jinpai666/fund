@@ -9,6 +9,7 @@ import OurNumbers from "./components/OurNumbers/OurNumbers.jsx";
 import About from "./components/About/About.jsx";
 import Team from "./components/Team/Team.jsx";
 import Strategy from "./components/Strategy/Strategy.jsx";
+import Contact from "./components/Contact/Contact.jsx";
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -22,6 +23,7 @@ function App() {
         <About t={t}/>
         <Team t={t}/>
         <Strategy t={t}/>
+        <Contact t={t}/>
     </div>
   );
 }

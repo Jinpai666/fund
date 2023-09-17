@@ -11,7 +11,6 @@
     display: flex;
     justify-content: flex-start;
     background-size: cover;
-
   }
   &__content {
     height: 100%;
@@ -20,27 +19,23 @@
     flex-direction: column;
     justify-content: center;
   }
-  &__row{
+  &__row {
     margin-bottom: 20px;
     background: $accent-light;
-    &:nth-of-type(odd){
+    &:nth-of-type(odd) {
       @media (max-width: 767px) {
         flex-direction: column-reverse;
       }
     }
-
-
   }
-  &__column{
+  &__column {
     padding: 0;
-
   }
-  &__image-wrapper{
+  &__image-wrapper {
     width: 100%;
     height: 100%;
-
   }
-  &__image{
+  &__image {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -52,7 +47,7 @@
     margin-bottom: 10px;
     @media (max-width: 575px) {
       text-align: center;
-      font-size: 22px; ;
+      font-size: 22px;
     }
   }
   &__text {
@@ -62,13 +57,13 @@
       text-align: center;
     }
   }
-  &__text-group{
+  &__text-group {
     margin-bottom: 30px;
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding:20px;
+    padding: 20px;
   }
 }
