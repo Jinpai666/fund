@@ -6,7 +6,7 @@ function Team({ t }) {
 
 
   return (
-         <section id="portfolio">
+         <section id="team">
              <Container>
                  <div className="team">
                      <h2 className="team__header ">

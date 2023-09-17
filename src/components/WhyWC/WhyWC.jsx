@@ -4,7 +4,7 @@ import { Controller, Film, Lightbulb, Building } from "react-bootstrap-icons";
 
 function WhyWC({ t }) {
   return (
-      <section id="about">
+      <section>
           <Container>
               <div className="whyWC">
                   <h3 className="whyWC__header--small ">
