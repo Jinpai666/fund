@@ -15,7 +15,7 @@
     background-size: cover;
     @media (max-width: 991px){
       background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-      url("../../../public/images/dollar.jpg");
+      url("/images/dollar.jpg");
     }
   }
   &__text-box {

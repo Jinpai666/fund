@@ -9,12 +9,25 @@
   }
   &__portrait{
     width: 100%;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
   }
   &__columns{
     justify-content: center;
   }
+  &__column{
+    max-width: 370px;
+  }
   &__text{
+    padding-top: 30px;
+  }
+  &__paragraph{
     @include paragraph;
+    &:first-child{
+      color: $accent-light;
+      font-weight: bold;
+      font-size: 22px;
+    }
   }
 
 }
