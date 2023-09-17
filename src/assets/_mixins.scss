@@ -1,6 +1,7 @@
 @import "variables";
 
 @mixin small-header {
+  color: $secondary-color;
   font-size: 28px;
   font-weight: bold;
   text-align: center;
@@ -17,6 +18,7 @@
   }
 }
 @mixin big-header {
+  color: $secondary-color;
   margin: 20px auto;
   font-size: $big-header;
   font-weight: bold;
@@ -37,5 +39,4 @@
   color: $secondary-color;
   line-height: 26px;
   margin-bottom: 30px;
-  text-align: center;
 }

@@ -19,12 +19,13 @@
     margin-bottom: 40px;
     font-weight: bold;
     font-size: 20px;
-    transition: 4s;
+    transition: 1s;
 
   }
   &__text{
       font-size: 30px;
-    transition: 4s;
+    transition: 3s;
+    color: $accent-light;
   }
   &__card{
     margin-bottom: 20px;
