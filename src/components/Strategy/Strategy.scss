@@ -14,14 +14,13 @@
   }
   &__content {
     height: 100%;
-    padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
   &__row {
     margin-bottom: 20px;
-    background: $accent-light;
+    background: $accent-dark;
     &:nth-of-type(odd) {
       @media (max-width: 767px) {
         flex-direction: column-reverse;

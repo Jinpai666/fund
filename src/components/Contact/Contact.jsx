@@ -8,13 +8,23 @@ function Contact({ t }) {
       <Container>
         <div className="contact">
           <Row className="contact__row">
-            <Col md={4}>
-              <div>dane</div>
+            <Col className="contact__column" md={4}>
+              <div className="contact__text">
+                  <p>WORKING CAPITAL</p>
+                  <p>ID 21312312</p>
+                  <p>Lorem: Ipsum</p>
+                  <p>Adres: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error incidunt repellendus sequi sint. </p>
+              </div>
             </Col>
-            <Col md={4}>
-              <div>dane</div>
+            <Col className="contact__column" md={4}>
+                <div className="contact__text">
+                    <p>WORKING CAPITAL</p>
+                    <p>ID 21312312</p>
+                    <p>Lorem: Ipsum</p>
+                    <p>Adres: Licka 66 Waraszawa, 02-022</p>
+                </div>
             </Col>
-            <Col md={4}>
+            <Col  md={4}>
               <div className="contact__image-wrapper">
                 <img
                   className="contact__image-wrapper"
