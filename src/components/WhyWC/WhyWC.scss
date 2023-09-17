@@ -2,7 +2,6 @@
 @import "src/assets/mixins";
 
 .whyWC {
-  @include section-margin;
   text-align: center;
   &__header {
     &--small {

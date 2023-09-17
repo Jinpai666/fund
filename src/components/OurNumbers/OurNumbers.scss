@@ -2,7 +2,6 @@
 @import "src/assets/mixins";
 
 .numbers {
-  @include section-margin;
 
   &__header {
     @include small-header;

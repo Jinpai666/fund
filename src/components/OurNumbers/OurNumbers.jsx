@@ -12,9 +12,12 @@ function OurNumbers({ t }) {
 
     const observer = useMemo(
       () =>
-        new IntersectionObserver(([entry]) =>
-          setIsIntersecting(entry.isIntersecting),
-        ),
+          new IntersectionObserver(([entry]) => {
+            if (entry.isIntersecting) {
+              setIsIntersecting(true); 
+              observer.disconnect();
+            }
+          }),
       [],
     );
 

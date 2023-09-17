@@ -6,9 +6,12 @@ function Contact({ t }) {
   return (
     <section id="contact">
       <Container>
+
         <div className="contact">
-          <Row className="contact__row">
-            <Col className="contact__column" md={4}>
+            <h2 className="contact__header">CONTACT</h2>
+
+            <Row className="contact__row">
+            <Col className="contact__column" md={6}>
               <div className="contact__text">
                   <p>WORKING CAPITAL</p>
                   <p>ID 21312312</p>
@@ -16,7 +19,7 @@ function Contact({ t }) {
                   <p>Adres: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error incidunt repellendus sequi sint. </p>
               </div>
             </Col>
-            <Col className="contact__column" md={4}>
+            <Col className="contact__column" md={6}>
                 <div className="contact__text">
                     <p>WORKING CAPITAL</p>
                     <p>ID 21312312</p>
@@ -24,15 +27,7 @@ function Contact({ t }) {
                     <p>Adres: Licka 66 Waraszawa, 02-022</p>
                 </div>
             </Col>
-            <Col  md={4}>
-              <div className="contact__image-wrapper">
-                <img
-                  className="contact__image-wrapper"
-                  src="/images/contact.jpg"
-                  alt="contact"
-                />
-              </div>
-            </Col>
+
           </Row>
         </div>
       </Container>

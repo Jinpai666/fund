@@ -5,9 +5,7 @@
   font-size: 28px;
   font-weight: bold;
   text-align: center;
-  border-bottom: 1px solid $accent-dark;
-  margin-bottom: 40px;
-  padding-bottom: 5px;
+  margin: 70px 0 40px;
   @media (max-width: 991px) {
     font-size: $small-header-md;
   }
@@ -32,9 +30,7 @@
 
   }
 }
-@mixin section-margin {
-  margin-top: 70px;
-}
+
 @mixin paragraph {
   color: $secondary-color;
   line-height: 26px;

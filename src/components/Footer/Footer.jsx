@@ -20,7 +20,7 @@ function Footer({ t }) {
                   href="https://facebook.com"
                   target="_blank"
                 >
-                  <Facebook color="white" size={50} />
+                  <Facebook color="white" size={40} />
                 </a>
               </Col>
               <Col xs={6} className="footer__icon">
@@ -29,7 +29,7 @@ function Footer({ t }) {
                   href="https://instagram.com"
                   target="_blank"
                 >
-                  <Instagram color="white" size={50} />
+                  <Instagram color="white" size={40} />
                 </a>
               </Col>
             </Row>

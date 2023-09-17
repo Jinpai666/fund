@@ -2,7 +2,6 @@
 @import "src/assets/mixins";
 
 .team {
-  @include section-margin;
 
   &__header {
     @include small-header;
@@ -11,6 +10,7 @@
     width: 200px;
     height: 200px;
     box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    border-radius: 50%;
   }
   &__portrait {
     width: 100%;
@@ -38,6 +38,7 @@
   }
   &__paragraph {
     @include paragraph;
+
     &:first-child {
       color: $accent-light;
       font-weight: bold;
