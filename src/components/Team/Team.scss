@@ -1,0 +1,20 @@
+@import "src/assets/variables";
+@import "src/assets/mixins";
+
+.team{
+  @include section-margin;
+
+  &__header{
+    @include small-header;
+  }
+  &__portrait{
+    width: 100%;
+  }
+  &__columns{
+    justify-content: center;
+  }
+  &__text{
+    @include paragraph;
+  }
+
+}

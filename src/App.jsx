@@ -7,6 +7,7 @@ import Welcome from "./components/Welcome/Welcome.jsx";
 import WhyWC from "./components/WhyWC/WhyWC.jsx";
 import OurNumbers from "./components/OurNumbers/OurNumbers.jsx";
 import About from "./components/About/About.jsx";
+import Team from "./components/Team/Team.jsx";
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -18,6 +19,7 @@ function App() {
       <WhyWC t={t} />
       <OurNumbers t={t} />
         <About t={t}/>
+        <Team t={t}/>
     </div>
   );
 }
