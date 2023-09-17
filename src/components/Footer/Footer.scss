@@ -1,0 +1,33 @@
+@import "src/assets/variables";
+@import "src/assets/mixins";
+
+.footer {
+  @include section-margin;
+  &__row {
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+  }
+  background-color: $secondary-color;
+  width: 100%;
+
+  &__text {
+    color: $primary-color;
+    font-size: 20px;
+    @media (max-width: 768px) {
+      margin-top: 20px;
+
+      text-align: center;
+    }
+  }
+  &__icons {
+    @media (max-width: 768px) {
+      max-width: 200px;
+      margin: 0 auto;
+    }
+  }
+  &__icon {
+    margin: 20px 0;
+    text-align: center;
+  }
+}

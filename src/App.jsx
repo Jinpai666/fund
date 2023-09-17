@@ -10,6 +10,8 @@ import About from "./components/About/About.jsx";
 import Team from "./components/Team/Team.jsx";
 import Strategy from "./components/Strategy/Strategy.jsx";
 import Contact from "./components/Contact/Contact.jsx";
+import Partners from "./components/Partners/Partners.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -20,10 +22,12 @@ function App() {
       <Welcome t={t} />
       <WhyWC t={t} />
       <OurNumbers t={t} />
-        <About t={t}/>
-        <Team t={t}/>
-        <Strategy t={t}/>
-        <Contact t={t}/>
+      <About t={t} />
+      <Team t={t} />
+      <Strategy t={t} />
+      <Contact t={t} />
+      <Partners t={t} />
+      <Footer t={t} />
     </div>
   );
 }

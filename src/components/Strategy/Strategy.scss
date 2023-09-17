@@ -20,7 +20,7 @@
   }
   &__row {
     margin-bottom: 20px;
-    background: $accent-dark;
+    background: $accent-light;
     &:nth-of-type(odd) {
       @media (max-width: 767px) {
         flex-direction: column-reverse;

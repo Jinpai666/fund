@@ -2,10 +2,10 @@
 @import "src/assets/mixins";
 
 .contact {
-  @include section-margin;
+  margin: 70px auto 0;
+
   max-width: 1000px;
-  margin: 0 auto ;
-  background: $accent-light;
+  background: $accent-dark;
   &__image-wrapper {
     width: 100%;
     height: 100%;
@@ -15,16 +15,15 @@
     height: 100%;
     object-fit: cover;
   }
-  &__column{
+  &__column {
     display: flex;
     justify-content: center;
     padding: 40px 0;
   }
-  &__text{
-    line-height:26px;
-    width:60%;
+  &__text {
+    line-height: 26px;
+    width: 60%;
     text-align: left;
     color: $primary-color;
-
   }
 }
