@@ -73,6 +73,7 @@
   padding: 20px;
   position: relative;
   border-bottom: 1px solid $primary-color;
+  color: $primary-color;
 
   &:hover {
     background-color: $accent-light;
@@ -84,7 +85,6 @@
 .mobile-navigation a {
   display: block;
   padding: 15px;
-  color: $primary-color;
   text-decoration: none;
 }
 

@@ -18,7 +18,8 @@
     "react-bootstrap": "^2.8.0",
     "react-bootstrap-icons": "^1.10.3",
     "react-dom": "^18.2.0",
-    "react-i18next": "^13.2.2"
+    "react-i18next": "^13.2.2",
+    "react-scroll": "^1.8.9"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

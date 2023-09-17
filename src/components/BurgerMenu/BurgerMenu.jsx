@@ -1,5 +1,6 @@
 import "./BurgerMenu.scss";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-scroll";
 
 import React, { useState } from "react";
 
@@ -28,34 +29,61 @@ function BurgerMenu({t}) {
       <nav className={`mobile-navigation ${isOpen ? "open" : ""}`}>
         <ul>
           <li>
-            <a onClick={handleMenuClick} href="#">
+            <Link
+                to="home"
+                smooth={true}
+                duration={500}
+                offset={-100}
+                onClick={handleMenuClick}>
               {t("home")}
-            </a>
+            </Link>
           </li>
           <li>
-            <a onClick={handleMenuClick} href="#about">
-              {t("about")}
-            </a>
-          </li>
-          <li>
-            <a onClick={handleMenuClick} href="#team">
-              {t("team")}
-            </a>
-          </li>
-          <li>
-            <a onClick={handleMenuClick} href="#strategy">
-              {t("strategy")}
-            </a>
-          </li>
-          <li>
-            <a onClick={handleMenuClick} href="#portfolio">
+            <Link
+
+                to="portfolio"
+                smooth={true}
+                duration={500}
+                offset={-100}
+                   onClick={handleMenuClick}>
               {t("portfolio")}
-            </a>
+            </Link>
           </li>
           <li>
-            <a onClick={handleMenuClick} href="#contact">
+            <Link   to="about"
+                    smooth={true}
+                    duration={500}
+                    offset={-100}
+                    onClick={handleMenuClick}>
+              {t("about")}
+            </Link>
+          </li>
+          <li>
+            <Link   to="team"
+                    smooth={true}
+                    duration={500}
+                    offset={-100}
+                    onClick={handleMenuClick}>
+              {t("team")}
+            </Link>
+          </li>
+          <li>
+            <Link   to="strategy"
+                    smooth={true}
+                    duration={500}
+                    offset={-100}
+                    onClick={handleMenuClick}>
+              {t("strategy")}
+            </Link>
+          </li>
+          <li>
+            <Link  to="contact"
+                   smooth={true}
+                   duration={500}
+                   offset={-100}
+                   onClick={handleMenuClick}>
               {t("contact")}
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

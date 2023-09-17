@@ -14,7 +14,7 @@ function OurNumbers({ t }) {
       () =>
           new IntersectionObserver(([entry]) => {
             if (entry.isIntersecting) {
-              setIsIntersecting(true); 
+              setIsIntersecting(true);
               observer.disconnect();
             }
           }),

@@ -85,6 +85,7 @@
     }
   }
   &__link {
+    cursor: pointer;
     color: $secondary-color;
     text-decoration: none;
     &:hover {
