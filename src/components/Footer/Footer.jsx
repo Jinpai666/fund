@@ -9,7 +9,7 @@ function Footer({ t }) {
         <Row className="footer__row">
           <Col xs={12} md={10}>
             <p className="footer__text">
-              Copyright © Working Capital all rights reserved.
+              {t("copyright")}
             </p>
           </Col>
           <Col xs={12} md={2}>
