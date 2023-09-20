@@ -8,7 +8,7 @@ function Contact({ t }) {
       <Container>
 
         <div className="contact">
-            <h2 className="contact__header">CONTACT</h2>
+            <h2 className="contact__header">{t("contactTitle")}</h2>
 
             <Row className="contact__row">
             <Col className="contact__column" md={6}>
