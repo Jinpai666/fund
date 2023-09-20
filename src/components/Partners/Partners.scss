@@ -7,7 +7,13 @@
     @include small-header
   }
 
+  &__row{
+    @media (max-width: 767px) {
+      max-width: 300px;
+      margin: 0 auto;
+    }
 
+  }
   &__logo {
     width: 80px;
     height: 80px;
