@@ -21,7 +21,10 @@ function App() {
 
   return (
     <div className="App">
-        {!isPolicyVisible && <Navigation t={t} i18n={i18n} />}
+        {!isPolicyVisible &&
+            <>
+
+            <Navigation t={t} i18n={i18n} />
       <Welcome t={t} />
       <WhyWC t={t} />
       <OurNumbers t={t} />
@@ -32,6 +35,7 @@ function App() {
       <Partners t={t} />
       <Footer t={t} />
       <CookieInfo handlePolicy={setIsPolicyVisible} t={t}/>
+            </>}
           {isPolicyVisible &&  <Policy handlePolicy={setIsPolicyVisible} t={t} /> }
 
     </div>
