@@ -1,0 +1,44 @@
+@import "src/assets/variables";
+@import "src/assets/mixins";
+
+.cookie-info {
+  position: fixed;
+  bottom: 0;
+  background: $primary-color;
+  width: 100%;
+  border-top: 1px solid $accent-dark;
+  padding: 20px 0;
+  @media (max-width: 1199px) {
+    padding: 40px 0;
+  }
+  &__text {
+    max-width: 1000px;
+    margin: 0 auto;
+    line-height: 26px;
+    position: relative;
+  }
+  &__link {
+    font-weight: bold;
+    margin-left: 10px;
+    cursor: pointer;
+    &:hover {
+      color: $accent-light;
+    }
+  }
+  &__button {
+    position: absolute;
+    top: -10%;
+    right: 0;
+    font-size: 26px;
+    font-weight: bold;
+    cursor: pointer;
+    &:hover {
+      color: $accent-light;
+    }
+    @media (max-width: 1199px) {
+      top: -30px;
+      right: 60px;
+    }
+  }
+
+}

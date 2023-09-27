@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+import {Suspense, useState} from "react";
 import "./App.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useTranslation } from "react-i18next";
@@ -12,13 +12,16 @@ import Strategy from "./components/Strategy/Strategy.jsx";
 import Contact from "./components/Contact/Contact.jsx";
 import Partners from "./components/Partners/Partners.jsx";
 import Footer from "./components/Footer/Footer.jsx";
+import CookieInfo from "./components/CookieInfo/CookieInfo.jsx";
+import Policy from "./components/Policy/Policy.jsx";
 
 function App() {
   const { t, i18n } = useTranslation();
+    const [isPolicyVisible, setIsPolicyVisible] = useState(false);
 
   return (
     <div className="App">
-      <Navigation t={t} i18n={i18n} />
+        {!isPolicyVisible && <Navigation t={t} i18n={i18n} />}
       <Welcome t={t} />
       <WhyWC t={t} />
       <OurNumbers t={t} />
@@ -28,6 +31,9 @@ function App() {
       <Contact t={t} />
       <Partners t={t} />
       <Footer t={t} />
+      <CookieInfo handlePolicy={setIsPolicyVisible} t={t}/>
+          {isPolicyVisible &&  <Policy handlePolicy={setIsPolicyVisible} t={t} /> }
+
     </div>
   );
 }
