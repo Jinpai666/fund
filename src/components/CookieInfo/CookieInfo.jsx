@@ -16,6 +16,10 @@ function CookieInfo({ t, handlePolicy }) {
   };
   const handleLink = () => {
       handlePolicy(true);
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
   };
 
   if (isClosed) {
