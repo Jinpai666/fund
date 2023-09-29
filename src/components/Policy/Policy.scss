@@ -10,11 +10,11 @@
   height: 100%;
   width: 100%;
   padding: 50px 100px;
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     padding: 50px 30px 10px;
   }
-  @media (max-width: 480px) {
-    top: -60px;
+  @media (max-width: 767px) {
+    font-size: $mobile-font;
   }
   &__container{
     position: relative;

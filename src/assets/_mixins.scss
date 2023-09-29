@@ -34,4 +34,9 @@
 @mixin paragraph {
   color: $secondary-color;
   line-height: 26px;
+  @media (max-width: 767px) {
+
+    font-size: $mobile-font;
+
+  }
 }

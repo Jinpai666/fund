@@ -16,6 +16,10 @@
     margin: 0 auto;
     line-height: 26px;
     position: relative;
+    font-size: $main-font;
+    @media (max-width: 767px) {
+      font-size: $mobile-font;
+    }
   }
   &__link {
     font-weight: bold;

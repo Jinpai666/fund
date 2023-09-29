@@ -23,14 +23,14 @@
   &__text {
     color: $primary-color;
     font-size: 20px;
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       margin-top: 20px;
 
       text-align: center;
     }
   }
   &__icons {
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       max-width: 200px;
       margin: 0 auto;
     }

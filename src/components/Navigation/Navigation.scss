@@ -13,7 +13,7 @@
   justify-content: space-between;
   align-items: center;
   max-width: 1320px;
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     padding-bottom: 10px;
   }
   &__logo {
@@ -21,7 +21,7 @@
   }
   &__buttons {
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -41,7 +41,7 @@
     background-color: transparent;
 
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       margin-top: 0;
     }
     &--selected {
@@ -55,7 +55,7 @@
   &__button-wrapper{
     &:nth-of-type(2) {
       margin-top: 5px;
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
         margin-top: 0;
       }
     }
@@ -63,7 +63,7 @@
   &__right-side {
     display: flex;
     align-items: center;
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       flex-direction: row-reverse;
     }
   }
@@ -80,7 +80,7 @@
     @media (min-width: 1200px) {
       gap: 60px;
     }
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       display: none;
     }
   }
