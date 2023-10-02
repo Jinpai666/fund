@@ -97,13 +97,13 @@ function Navigation({ t, i18n }) {
                   className="navigation__button"
                   onClick={()=>langChange("en")}
                 >
-                 PL
+                EN
                 </button>}
                 {  i18n.resolvedLanguage === "en" && <button
                   className="navigation__button"
                   onClick={()=>langChange("pl")}
                 >
-                 EN
+                PL
                 </button>}
 
               </div >
