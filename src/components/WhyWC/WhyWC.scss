@@ -13,7 +13,7 @@
   }
   &__paragraph {
     @include paragraph;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
     @media (max-width: 767px) {
       line-height: 22px;
     }

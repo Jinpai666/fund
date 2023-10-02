@@ -4,9 +4,7 @@ import { Link } from "react-scroll";
 
 import React, { useState } from "react";
 
-
-
-function BurgerMenu({t}) {
+function BurgerMenu({ t }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -30,58 +28,67 @@ function BurgerMenu({t}) {
         <ul>
           <li>
             <Link
-                to="home"
-                smooth={true}
-                duration={500}
-                offset={-100}
-                onClick={handleMenuClick}>
+              to="home"
+              smooth={true}
+              duration={500}
+              offset={-100}
+              onClick={handleMenuClick}
+            >
               {t("home")}
             </Link>
           </li>
           <li>
             <Link
-
-                to="portfolio"
-                smooth={true}
-                duration={500}
-                offset={-100}
-                   onClick={handleMenuClick}>
-              {t("portfolio")}
-            </Link>
-          </li>
-          <li>
-            <Link   to="about"
-                    smooth={true}
-                    duration={500}
-                    offset={-100}
-                    onClick={handleMenuClick}>
+              to="about"
+              smooth={true}
+              duration={500}
+              offset={-100}
+              onClick={handleMenuClick}
+            >
               {t("about")}
             </Link>
           </li>
           <li>
-            <Link   to="team"
-                    smooth={true}
-                    duration={500}
-                    offset={-100}
-                    onClick={handleMenuClick}>
+            <Link
+              to="portfolio"
+              smooth={true}
+              duration={500}
+              offset={-100}
+              onClick={handleMenuClick}
+            >
+              {t("portfolio")}
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="team"
+              smooth={true}
+              duration={500}
+              offset={-100}
+              onClick={handleMenuClick}
+            >
               {t("team")}
             </Link>
           </li>
           <li>
-            <Link   to="strategy"
-                    smooth={true}
-                    duration={500}
-                    offset={-100}
-                    onClick={handleMenuClick}>
+            <Link
+              to="strategy"
+              smooth={true}
+              duration={500}
+              offset={-100}
+              onClick={handleMenuClick}
+            >
               {t("strategy")}
             </Link>
           </li>
           <li>
-            <Link  to="contact"
-                   smooth={true}
-                   duration={500}
-                   offset={-100}
-                   onClick={handleMenuClick}>
+            <Link
+              to="contact"
+              smooth={true}
+              duration={500}
+              offset={-100}
+              onClick={handleMenuClick}
+            >
               {t("contact")}
             </Link>
           </li>

@@ -1,4 +1,4 @@
-import {Suspense, useState} from "react";
+import { Suspense, useState } from "react";
 import "./App.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useTranslation } from "react-i18next";
@@ -17,27 +17,27 @@ import Policy from "./components/Policy/Policy.jsx";
 
 function App() {
   const { t, i18n } = useTranslation();
-    const [isPolicyVisible, setIsPolicyVisible] = useState(false);
+  const [isPolicyVisible, setIsPolicyVisible] = useState(false);
 
   return (
     <div className="App">
-        {!isPolicyVisible &&
-            <>
+      {!isPolicyVisible && (
+        <>
+          <Navigation t={t} i18n={i18n} />
+          <Welcome t={t} />
+          <About t={t} />
 
-            <Navigation t={t} i18n={i18n} />
-      <Welcome t={t} />
-      <WhyWC t={t} />
-      <OurNumbers t={t} />
-      <About t={t} />
-      <Team t={t} />
-      <Strategy t={t} />
-      <Contact t={t} />
-      <Partners t={t} />
-      <Footer t={t} />
-      <CookieInfo handlePolicy={setIsPolicyVisible} t={t}/>
-            </>}
-          {isPolicyVisible &&  <Policy handlePolicy={setIsPolicyVisible} t={t} /> }
-
+          <WhyWC t={t} />
+          <OurNumbers t={t} />
+          <Team t={t} />
+          <Strategy t={t} />
+          <Contact t={t} />
+          <Partners t={t} />
+          <Footer t={t} />
+          <CookieInfo handlePolicy={setIsPolicyVisible} t={t} />
+        </>
+      )}
+      {isPolicyVisible && <Policy handlePolicy={setIsPolicyVisible} t={t} />}
     </div>
   );
 }
