@@ -9,6 +9,11 @@ function BurgerMenu({ t }) {
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+    if (!isOpen) {
+    document.body.style.overflowY = 'hidden';
+    } else {
+      document.body.style.overflowY = 'auto';
+    }
   };
   const handleMenuClick = () => {
     setIsOpen(false);
@@ -24,7 +29,7 @@ function BurgerMenu({ t }) {
         <div className="bar"></div>
         <div className="bar"></div>
       </div>
-      <nav className={`mobile-navigation ${isOpen ? "open" : ""}`}>
+      <div className={`mobile-navigation ${isOpen ? "open" : ""}`}>
         <ul>
           <li>
             <Link
@@ -93,7 +98,7 @@ function BurgerMenu({ t }) {
             </Link>
           </li>
         </ul>
-      </nav>
+      </div>
     </div>
   );
 }
