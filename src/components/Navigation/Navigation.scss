@@ -41,10 +41,10 @@
     background-position: center;
     height: 20px;
     &--pl {
-      background-image: url(/images/plflag.png);
+      background-image: url(/images/ukflag.png);
     }
     &--en {
-      background-image: url(/images/ukflag.png);
+      background-image: url(/images/plflag.png);
     }
 
     @media (max-width: 767px) {
