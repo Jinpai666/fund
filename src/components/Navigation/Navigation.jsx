@@ -1,17 +1,13 @@
-import { Suspense } from "react";
 import "./Navigation.scss";
 import { Container } from "react-bootstrap";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import BurgerMenu from "../BurgerMenu/BurgerMenu.jsx";
 
-
-
 function Navigation({ t, i18n }) {
-
   const langChange = (lang) => {
-    console.log("lang",lang)
-        i18n.changeLanguage(lang)
-  }
+    console.log("lang", lang);
+    i18n.changeLanguage(lang);
+  };
 
   return (
     <nav>
@@ -89,24 +85,19 @@ function Navigation({ t, i18n }) {
               </Link>
             </li>
           </ul>
-          <BurgerMenu t={t}  />
+          <BurgerMenu t={t} />
 
           <ul className="ms-4 navigation__buttons">
-              <div  className="navigation__button-wrapper">
-                {  i18n.resolvedLanguage === "pl" && <button
-                  className="navigation__button"
-                  onClick={()=>langChange("en")}
-                >
-                EN
-                </button>}
-                {  i18n.resolvedLanguage === "en" && <button
-                  className="navigation__button"
-                  onClick={()=>langChange("pl")}
-                >
-                PL
-                </button>}
-
-              </div >
+            <div className="navigation__button-wrapper">
+              <div
+                className={`navigation__button navigation__button--${
+                  i18n.resolvedLanguage === "pl" ? "pl" : "en"
+                }`}
+                onClick={() =>
+                  langChange(i18n.resolvedLanguage === "pl" ? "en" : "pl")
+                }
+              />
+            </div>
           </ul>
         </div>
       </Container>
