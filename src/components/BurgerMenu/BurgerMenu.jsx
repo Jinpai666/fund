@@ -16,6 +16,7 @@ function BurgerMenu({ t }) {
     }
   };
   const handleMenuClick = () => {
+    document.body.style.overflowY = 'auto';
     setIsOpen(false);
   };
 
