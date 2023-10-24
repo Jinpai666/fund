@@ -14,7 +14,7 @@ function Navigation({ t, i18n }) {
       <Container className="navigation">
         <img
           className="navigation__logo"
-          src="logo2.svg"
+          src="images/logo2.svg"
           alt="Working Capital"
         />
         <div className="navigation__right-side">

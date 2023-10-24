@@ -26,7 +26,6 @@ function App() {
           <Navigation t={t} i18n={i18n} />
           <Welcome t={t} />
           <About t={t} />
-
           <WhyWC t={t} />
           <OurNumbers t={t} />
           <Team t={t} />
