@@ -6,7 +6,9 @@
   z-index: 1000;
   background: #fff;
   width: 100%;
-
+  @media (max-width: 1000px) {
+    padding: 0 10px;
+  }
   @media (max-width: 767px) {
     padding-bottom: 10px;
   }

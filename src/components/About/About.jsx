@@ -49,7 +49,7 @@ function About({ t }) {
               </svg>
               <h2 className="about__header">{t("aboutHeader1")}</h2>
               <p
-                className="text-center"
+                className="about__text"
                 dangerouslySetInnerHTML={{ __html: t("aboutText1") }}
               />
             </div>
@@ -77,7 +77,7 @@ function About({ t }) {
               </svg>
               <h2 className="about__header">{t("aboutHeader2")}</h2>
               <p
-                className="text-center"
+                className="about__text"
                 dangerouslySetInnerHTML={{ __html: t("aboutText2") }}
               />
             </div>
@@ -105,7 +105,7 @@ function About({ t }) {
               </svg>
               <h2 className="about__header">{t("aboutHeader3")}</h2>
               <p
-                className="text-center"
+                className="about__text"
                 dangerouslySetInnerHTML={{ __html: t("aboutText3") }}
               />
             </div>
@@ -134,7 +134,7 @@ function About({ t }) {
               </svg>
               <h2 className="about__header">{t("aboutHeader4")}</h2>
               <p
-                className="text-center"
+                className="about__text"
                 dangerouslySetInnerHTML={{ __html: t("aboutText4") }}
               />
             </div>
@@ -162,7 +162,7 @@ function About({ t }) {
               </svg>
               <h2 className="about__header">{t("aboutHeader5")}</h2>
               <p
-                className="text-center"
+                className="about__text"
                 dangerouslySetInnerHTML={{ __html: t("aboutText5") }}
               />
             </div>

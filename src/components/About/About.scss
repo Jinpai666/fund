@@ -6,6 +6,7 @@
     justify-content: center;
     gap: 120px;
     flex-wrap: wrap;
+    margin-bottom: 120px;
   }
   &__col {
     display: flex;
@@ -14,6 +15,10 @@
   }
   &__header {
     @include headerA;
+  }
+  &__text {
+    @include text;
+    text-align: center;
   }
 }
 @media (max-width: 991px) {
