@@ -9,3 +9,4 @@ export const SectionHeader = ({ header, headline }) => {
     </div>
   );
 };
+export default SectionHeader;

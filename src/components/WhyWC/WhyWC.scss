@@ -1,37 +1,21 @@
 @import "src/assets/mixins";
 
 .whyWC {
-  text-align: center;
-  &__header {
-    &--small {
-      @include small-header;
-    }
-    &--large {
-      @include big-header;
-    }
+  background-color: #f7f7f7;
+  padding-bottom: 40px;
+  &__decor {
+    width: 100%;
   }
   &__paragraph {
-    @include paragraph;
-    margin-bottom: 70px;
-    @media (max-width: 767px) {
-      line-height: 22px;
-    }
-    @media (max-width: 991px) {
-      line-height: 24px;
-    }
+    color: #575757;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    max-width: 1080px;
+    padding-bottom: 120px;
   }
-  &__icons {
-    max-width: 1296px;
-    margin: 0 auto;
-    padding: 40px 0;
-    background-color: #bd2727;
-    @media (max-width: 575px) {
-      gap: 40px;
-    }
-  }
-  &__subtext {
-    color: #fff;
-    font-weight: bold;
-    margin-top: 20px;
+  &__header {
+    @include headerA;
   }
 }
