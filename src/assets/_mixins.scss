@@ -10,9 +10,7 @@
     font-size: $small-header-md;
   }
   @media (max-width: 767px) {
-
     font-size: $small-header-sm;
-
   }
 }
 @mixin big-header {
@@ -25,9 +23,7 @@
     font-size: $big-header-md;
   }
   @media (max-width: 767px) {
-
     font-size: $big-header-sm;
-
   }
 }
 
@@ -35,8 +31,6 @@
   color: $secondary-color;
   line-height: 26px;
   @media (max-width: 767px) {
-
     font-size: $mobile-font;
-
   }
 }

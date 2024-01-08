@@ -12,16 +12,16 @@ function Navigation({ t, i18n }) {
   return (
     <nav>
       <Container className="navigation">
-        <img
-          className="navigation__logo"
-          src="images/logo2.svg"
-          alt="Working Capital"
-        />
-        <div className="navigation__right-side">
+        <div className="navigation__left-side">
+          <img
+            className="navigation__logo"
+            src="images/logo2.svg"
+            alt="Working Capital"
+          />
           <ul className="navigation__links">
             <li>
               <Link
-                className="navigation__link"
+                className="navigation__link navigation__link_home"
                 to="home"
                 smooth={true}
                 duration={500}
@@ -85,18 +85,21 @@ function Navigation({ t, i18n }) {
               </Link>
             </li>
           </ul>
+        </div>
+
+        <div className="navigation__right-side">
           <BurgerMenu t={t} />
 
           <ul className="ms-4 navigation__buttons">
             <div className="navigation__button-wrapper">
               <div
-                className={`navigation__button navigation__button--${
-                  i18n.resolvedLanguage === "pl" ? "pl" : "en"
-                }`}
                 onClick={() =>
                   langChange(i18n.resolvedLanguage === "pl" ? "en" : "pl")
                 }
-              />
+                className="navigation__language-changer"
+              >
+                {i18n.resolvedLanguage === "pl" ? "en" : "pl"}
+              </div>
             </div>
           </ul>
         </div>

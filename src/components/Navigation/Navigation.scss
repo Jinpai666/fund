@@ -8,7 +8,7 @@
   z-index: 1000;
   background: #fff;
   width: 100%;
-  padding: 10px 10px;
+  padding: 0 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,12 +40,6 @@
     background-size: contain;
     background-position: center;
     height: 20px;
-    &--pl {
-      background-image: url(/images/ukflag.png);
-    }
-    &--en {
-      background-image: url(/images/plflag.png);
-    }
 
     @media (max-width: 767px) {
       margin-top: 0;
@@ -64,6 +58,10 @@
       }
     }
   }
+  &__left-side {
+    display: flex;
+    gap: 70px;
+  }
   &__right-side {
     display: flex;
     align-items: center;
@@ -72,22 +70,18 @@
     }
   }
   &__links {
-    font-weight: bold;
+    font-weight: 400;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 4vw;
-    @media (max-width: 1000px) {
-      gap: 2vw;
-    }
+    text-transform: uppercase;
 
-    @media (min-width: 1200px) {
-      gap: 60px;
-    }
-    @media (max-width: 767px) {
+    @media (max-width: 1000px) {
       display: none;
     }
   }
+
   &__link {
     cursor: pointer;
     color: $secondary-color;
@@ -95,5 +89,16 @@
     &:hover {
       color: $accent-light;
     }
+    &_home {
+      font-weight: 600;
+    }
+  }
+
+  &__language-changer {
+    text-transform: uppercase;
+    color: $primary-color;
+    background-color: $accent-light;
+    padding: 30px 35px;
+    height: 100%;
   }
 }

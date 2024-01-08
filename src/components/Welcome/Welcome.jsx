@@ -7,8 +7,13 @@ function Welcome({ t }) {
       <Container>
         <div className="welcome-section">
           <div className="welcome-section__text-container">
-            <h2 className="welcome-section__header"> {t("welcome")}</h2>
-            <h3 className="welcome-section__text">{t("seeding")}</h3>
+            <div className="welcome-section__text-wrapper">
+              <h1
+                className="welcome-section__header"
+                dangerouslySetInnerHTML={{ __html: t("welcome") }}
+              ></h1>
+              <p className="welcome-section__text">{t("seeding")}</p>
+            </div>
           </div>
         </div>
       </Container>

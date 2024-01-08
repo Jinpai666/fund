@@ -1,3 +1,4 @@
+import { SectionHeader } from "../SectionHeader/SectionHeader";
 import "./About.scss";
 import { Container, Row, Col } from "react-bootstrap";
 
@@ -5,7 +6,10 @@ function About({ t }) {
   return (
     <section id="about">
       <Container>
-        <h2 className="about__header">{t("aboutHeader")}</h2>
+        <SectionHeader
+          header={t("aboutHeader")}
+          headline={t("aboutHeadline")}
+        />
 
         <div className="about">
           <Row>
