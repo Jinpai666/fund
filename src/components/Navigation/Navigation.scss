@@ -99,5 +99,8 @@
     background-color: $accent-light;
     padding: 30px 35px;
     height: 100%;
+    @media (max-width: 767px) {
+      padding: 20px 25px;
+    }
   }
 }
