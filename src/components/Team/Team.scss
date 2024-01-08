@@ -1,8 +1,6 @@
-@import "src/assets/variables";
 @import "src/assets/mixins";
 
 .team {
-
   &__header {
     @include small-header;
   }
@@ -41,7 +39,7 @@
     @include paragraph;
 
     &:first-child {
-      color: $accent-light;
+      color: #fe0102;
       font-weight: bold;
       font-size: 30px;
       text-align: center;

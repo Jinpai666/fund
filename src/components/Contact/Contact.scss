@@ -1,11 +1,10 @@
-@import "src/assets/variables";
 @import "src/assets/mixins";
 
 .contact {
   max-width: 1000px;
   margin: 0 auto;
-  &__header{
-    @include small-header
+  &__header {
+    @include small-header;
   }
   &__image-wrapper {
     width: 100%;
@@ -19,18 +18,16 @@
   &__column {
     display: flex;
     justify-content: center;
-    @media (max-width: 767px){
-      &:nth-of-type(2){
+    @media (max-width: 767px) {
+      &:nth-of-type(2) {
         margin-top: 20px;
       }
     }
-
   }
   &__text {
     line-height: 26px;
     width: 60%;
     text-align: center;
-    color: $secondary-color;
-
+    color: #000;
   }
 }

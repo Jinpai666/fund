@@ -1,12 +1,11 @@
-@import "src/assets/variables";
 @import "src/assets/mixins";
 
 .cookie-info {
   position: fixed;
   bottom: 0;
-  background: $primary-color;
+  background: #fff;
   width: 100%;
-  border-top: 1px solid $accent-dark;
+  border-top: 1px solid #000;
   padding: 20px 0;
   @media (max-width: 1199px) {
     padding: 40px 0;
@@ -16,17 +15,13 @@
     margin: 0 auto;
     line-height: 26px;
     position: relative;
-    font-size: $main-font;
-    @media (max-width: 767px) {
-      font-size: $mobile-font;
-    }
   }
   &__link {
     font-weight: bold;
     margin-left: 10px;
     cursor: pointer;
     &:hover {
-      color: $accent-light;
+      color: #fe0102;
     }
   }
   &__button {
@@ -37,12 +32,11 @@
     font-weight: bold;
     cursor: pointer;
     &:hover {
-      color: $accent-light;
+      color: #fe0102;
     }
     @media (max-width: 1199px) {
       top: -30px;
       right: 60px;
     }
   }
-
 }

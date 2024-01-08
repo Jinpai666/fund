@@ -1,18 +1,15 @@
-@import "src/assets/variables";
 @import "src/assets/mixins";
 
 .partners {
-
   &__header {
-    @include small-header
+    @include small-header;
   }
 
-  &__row{
+  &__row {
     @media (max-width: 767px) {
       max-width: 300px;
       margin: 0 auto;
     }
-
   }
   &__logo {
     width: 80px;

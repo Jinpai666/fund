@@ -1,8 +1,6 @@
-@import "src/assets/variables";
 @import "src/assets/mixins";
 
 .numbers {
-
   &__header {
     @include small-header;
   }
@@ -22,7 +20,7 @@
   &__text {
     font-size: 30px;
     transition: 3s;
-    color: $accent-light;
+    color: #fe0102;
   }
   &__card {
     margin-bottom: 20px;

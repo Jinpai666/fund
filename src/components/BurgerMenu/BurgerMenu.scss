@@ -1,5 +1,3 @@
-@import "src/assets/variables";
-
 .burger-menu {
   display: flex;
   flex-direction: column;
@@ -10,7 +8,7 @@
 .burger-menu .bar {
   width: 30px;
   height: 3px;
-  background-color: $accent-dark;
+  background-color: #afafaf;
   margin: 3px 0;
   transition: 0.4s;
 }
@@ -28,7 +26,7 @@
 }
 
 .mobile-navigation {
-  background-color: $accent-dark;
+  background-color: #afafaf;
   position: absolute;
   top: 0;
   right: 0;
@@ -73,11 +71,11 @@
   font-size: 22px;
   padding: 20px;
   position: relative;
-  border-bottom: 1px solid $primary-color;
-  color: $primary-color;
+  border-bottom: 1px solid #000;
+  color: #000;
 
   &:hover {
-    background-color: $accent-light;
+    background-color: #fe0102;
     font-weight: bold;
   }
 }

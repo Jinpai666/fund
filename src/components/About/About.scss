@@ -1,42 +1,28 @@
-@import "src/assets/variables";
 @import "src/assets/mixins";
 
 .about {
-  &__header {
-    @include small-header;
+  &__row {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    flex-wrap: wrap;
   }
-  display: flex;
-
-  &__text-box {
-    background-color: $accent-dark;
-    height: 100%;
-    padding: 30px;
+  &__col {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
   }
-  &__column {
-    padding: 0;
+  &__header {
+    @include headerA;
   }
-  &__image-wrapper {
-    width: 100%;
-    height: 100%;
-  }
-  &__image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  &__text {
-    @include paragraph;
-    margin-bottom: 20px;
-    color: $primary-color;
-    text-align: left;
-    & strong {
-      font-weight: bold;
+}
+@media (max-width: 991px) {
+  .about {
+    &__col {
     }
-    &:last-of-type {
-      margin-bottom: 0;
+    &__row {
+      gap: 60px;
+      flex-direction: column;
     }
   }
 }

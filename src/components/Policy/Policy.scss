@@ -1,11 +1,10 @@
-@import "src/assets/variables";
 @import "src/assets/mixins";
 
 .policy {
   position: absolute;
   top: 0;
   right: 0;
-  background: $primary-color;
+  background: #fff;
   z-index: 9999;
   height: 100%;
   width: 100%;
@@ -13,17 +12,14 @@
   @media (max-width: 767px) {
     padding: 50px 30px 10px;
   }
-  @media (max-width: 767px) {
-    font-size: $mobile-font;
-  }
-  &__container{
+
+  &__container {
     position: relative;
   }
-  &__close-button{
+  &__close-button {
     position: absolute;
     top: -30px;
     right: 0;
     cursor: pointer;
-
   }
 }

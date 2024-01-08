@@ -1,4 +1,3 @@
-@import "src/assets/variables";
 @import "src/assets/mixins";
 
 .welcome-section {
@@ -92,7 +91,7 @@
       right: 0;
       left: 0;
       bottom: 0;
-      background: $accent-light;
+      background: #fe0102;
       mix-blend-mode: darken;
       z-index: 0;
     }
