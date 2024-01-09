@@ -3,21 +3,16 @@
 .welcome-section {
   position: relative;
   min-height: 730px;
-  background-image: url(/images/bannerImage.webp);
+  background-image: url(/images/bannerImg.webp);
   background-size: cover;
-  margin-top: 76px;
-  @media (max-width: 1199px) {
-    padding: 10vw 0;
-  }
+  margin-top: 60px;
+
   @media (max-width: 991px) {
     background-position-x: center;
   }
   @media (max-width: 767px) {
     min-height: 480px;
     height: 480px;
-  }
-  @media (max-width: 480px) {
-    margin-top: 80px;
   }
 
   &__image {

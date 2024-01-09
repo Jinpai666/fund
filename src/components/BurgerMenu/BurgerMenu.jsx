@@ -10,13 +10,13 @@ function BurgerMenu({ t }) {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
     if (!isOpen) {
-    document.body.style.overflowY = 'hidden';
+      document.body.style.overflowY = "hidden";
     } else {
-      document.body.style.overflowY = 'auto';
+      document.body.style.overflowY = "auto";
     }
   };
   const handleMenuClick = () => {
-    document.body.style.overflowY = 'auto';
+    document.body.style.overflowY = "auto";
     setIsOpen(false);
   };
 

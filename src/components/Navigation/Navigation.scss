@@ -6,12 +6,8 @@
   z-index: 1000;
   background: #fff;
   width: 100%;
-  @media (max-width: 1000px) {
-    padding: 0 10px;
-  }
-  @media (max-width: 767px) {
-    padding-bottom: 10px;
-  }
+  padding-left: 10px;
+
   &-wrapper {
     max-width: 1320px;
     margin: 0 auto;
@@ -68,7 +64,7 @@
   &__right-side {
     display: flex;
     align-items: center;
-    @media (max-width: 767px) {
+    @media (max-width: 1000px) {
       flex-direction: row-reverse;
     }
   }

@@ -14,11 +14,19 @@ function Navigation({ t, i18n }) {
       <div className="navigation">
         <div className="navigation-wrapper">
           <div className="navigation__left-side">
-            <img
-              className="navigation__logo"
-              src="images/logo2.svg"
-              alt="Working Capital"
-            />
+            <Link
+              className="navigation__link navigation__link_home"
+              to="home"
+              smooth={true}
+              duration={500}
+            >
+              <img
+                className="navigation__logo"
+                src="images/logo2.svg"
+                alt="Working Capital"
+              />
+            </Link>
+
             <ul className="navigation__links">
               <li>
                 <Link
