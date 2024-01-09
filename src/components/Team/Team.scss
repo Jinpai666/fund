@@ -1,6 +1,7 @@
 @import "src/assets/mixins";
 
 .team {
+  background-color: #f7f7f7;
   &__header {
     @include small-header;
   }
@@ -18,32 +19,35 @@
   }
   &__columns {
     justify-content: space-between;
+    padding-bottom: 30px;
   }
   &__column {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 0;
+    padding: 30px 0;
     transition: all 0.3s;
     height: 100%;
+    max-width: 360px;
     &:hover {
       background-color: #eee;
       transition: all 0.3s;
     }
   }
   &__text {
-    padding: 20px;
+    padding: 20px 20px 0 20px;
+  }
+  &__person {
+    @include headerB;
   }
   &__paragraph {
-    @include paragraph;
+    @include text;
 
     &:first-child {
-      color: #fe0102;
-      font-weight: bold;
-      font-size: 30px;
+      @include headerB;
       text-align: center;
-      margin-bottom: 30px;
+      padding-bottom: 20px;
     }
   }
 }

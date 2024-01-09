@@ -1,0 +1,34 @@
+@import "src/assets/mixins";
+
+.numbers {
+  &__row {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+  }
+  &__col {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__top {
+    color: #fe0102;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 160%;
+  }
+  &__bottom {
+    @include headerA;
+  }
+}
+@media (max-width: 767px) {
+  .numbers {
+    &__top {
+      font-size: 32px;
+    }
+  }
+}
