@@ -13,7 +13,7 @@ function WhyWC({ t }) {
 
         <img
           className="whyWC__decor"
-          src="images/decoration.webp"
+          src="images/network.svg"
           aria-hidden={true}
           alt=""
         />

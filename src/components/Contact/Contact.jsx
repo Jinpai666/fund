@@ -18,7 +18,7 @@ function Contact({ t }) {
           <Col className="contact__mobile-col" md={4}>
             <img
               className="contact__decoration--right"
-              src="images/decorRight.webp"
+              src="images/networkRight.svg"
               aria-hidden={true}
               alt=""
             />
@@ -88,7 +88,7 @@ function Contact({ t }) {
           <Col className="contact__mobile-col" md={4}>
             <img
               className="contact__decoration--right"
-              src="images/decorLeft.webp"
+              src="images/networkLeft.svg"
               aria-hidden={true}
               alt=""
             />
