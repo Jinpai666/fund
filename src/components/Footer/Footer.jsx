@@ -4,13 +4,11 @@ import { Instagram, Facebook } from "react-bootstrap-icons";
 
 function Footer({ t }) {
   return (
-    <section id="footer">
-      <Container className="footer">
+    <section className="footer" id="footer">
+      <Container>
         <Row className="footer__row">
           <Col xs={12} md={10}>
-            <p className="footer__text">
-              {t("copyright")}
-            </p>
+            <p className="footer__text">{t("copyright")}</p>
           </Col>
           <Col xs={12} md={2}>
             <Row className="footer__icons">
