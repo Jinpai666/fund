@@ -4,7 +4,7 @@ import { Container } from "react-bootstrap";
 
 function CookieInfo({ t, handlePolicy }) {
   const [isClosed, setIsClosed] = useState(
-    localStorage.getItem("cookieInfoClosed") === "true",
+    localStorage.getItem("cookieInfoClosed") === "true"
   );
 
   useEffect(() => {
@@ -15,10 +15,10 @@ function CookieInfo({ t, handlePolicy }) {
     setIsClosed(true);
   };
   const handleLink = () => {
-      handlePolicy(true);
+    handlePolicy(true);
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   };
 
@@ -27,20 +27,19 @@ function CookieInfo({ t, handlePolicy }) {
   }
 
   return (
-
-      <section className="cookie-info">
-        <Container className="cookie-info__text">
-          <div>
-            {t("cookieInfo")}{" "}
-            <span className="cookie-info__link" onClick={handleLink}>
-              {t("cookiePolicy")}
-            </span>
-          </div>
-          <div className="cookie-info__button" onClick={handleClose}>
-            X
-          </div>
-        </Container>
-      </section>
+    <section className="cookie-info">
+      <Container className="cookie-info__text">
+        <div>
+          {t("cookieInfo")}{" "}
+          <span className="cookie-info__link" onClick={handleLink}>
+            {t("cookiePolicy")}
+          </span>
+        </div>
+        <div className="cookie-info__button" onClick={handleClose}>
+          ✖
+        </div>
+      </Container>
+    </section>
   );
 }
 
