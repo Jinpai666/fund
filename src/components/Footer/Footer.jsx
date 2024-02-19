@@ -3,12 +3,16 @@ import { Container, Col, Row } from "react-bootstrap";
 import { Instagram, Facebook } from "react-bootstrap-icons";
 
 function Footer({ t }) {
+  const currentYear = new Date().getFullYear();
   return (
     <section className="footer" id="footer">
       <Container>
         <Row className="footer__row">
           <Col xs={12} md={10}>
-            <p className="footer__text">{t("copyright")}</p>
+            <p className="footer__text">
+              {t("copyright1")}
+              {currentYear} {t("copyright2")}
+            </p>
           </Col>
           <Col xs={12} md={2}>
             <Row className="footer__icons">
