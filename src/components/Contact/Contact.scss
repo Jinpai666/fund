@@ -2,6 +2,9 @@
 
 .contact {
   background-color: #f7f7f7;
+  background-image: url("/images/gradient.webp");
+  background-size: cover;
+  background-position: center;
   &__decoration--right {
     width: 100%;
   }
